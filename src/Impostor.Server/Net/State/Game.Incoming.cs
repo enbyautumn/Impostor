@@ -32,11 +32,11 @@ namespace Impostor.Server.Net.State
             // Check if;
             // - The player is already in this game.
             // - The game is full.
-            if (sender.Game != this && _players.Count >= Options.MaxPlayers)
+            /*if False(sender.Game != this && _players.Count >= Options.MaxPlayers)
             {
                 sender.SendDisconnectReason(DisconnectReason.GameFull);
                 return;
-            }
+            }*/
             
             // Check current player state.
             if (sender.Limbo == LimboStates.NotLimbo)
